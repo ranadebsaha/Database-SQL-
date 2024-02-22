@@ -4,3 +4,6 @@ Create table cust
 create table movie
 ( mv_no varchar(2) primary key, title varchar2(25),
 type varchar2(10), star varchar2(25), price number(8,2));
+
+create table invoice
+( inv_no varchar2(3) primary key, mv_no varchar(2) references movie, cust_id varchar2(3) references cust, issue_date date, return_date date);
