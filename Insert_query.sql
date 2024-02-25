@@ -46,3 +46,34 @@ insert into movie values
 
 insert into movie values
 ( '10','carry on doctor','comedy','leslie phillips', 100.00)
+
+
+insert into invoice values (
+'i01', '4' , 'a01', '23-july-93', '25-jul-93')
+
+insert into invoice values (
+'i02', '3' , 'a02', '12-aug-93', '15-aug-93')
+
+insert into invoice values (
+'i03', '1' , 'a02', '15-aug-93', '18-aug-93')
+
+insert into invoice values (
+'i04', '6' , 'a03', '10-sep-93', '13-sep-93')
+
+insert into invoice values (
+'i05', '7' , 'a04', '05-aug-93', '08-aug-93')
+
+insert into invoice values (
+'i06', '2' , 'a06', '18-sep-93', '21-sep-93')
+
+insert into invoice values (
+'i07', '9' , 'a05', '07-jul-93', '10-jul-93')
+
+insert into invoice values (
+'i08', '9' , 'a01', '11-aug-93', '14-aug-93')
+
+insert into invoice values (
+'i09', '5' , 'a03', '06-jul-93', '09-jul-93')
+
+insert into invoice values (
+'i10', '8' , 'a06', '03-sep-93', '06-sep-93')
