@@ -7,3 +7,4 @@
 7. select * from cust where area like '_a%'
 8.  select * from cust where area='da' or area='mu' or area='gh'
 9. select * from cust where phone_no>5550000
+10. select * from invoice where issue_date like '__-SEP-__'
