@@ -10,3 +10,4 @@
 10. select * from invoice where issue_date like '__-SEP-__'
 11. select * from invoice where cust_id like 'a01' or cust_id like 'a02'
 12. select * from movie where type like 'action' or type like 'comedy'
+13.  select * from movie where price>150 and price<=200
