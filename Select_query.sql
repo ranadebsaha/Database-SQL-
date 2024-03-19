@@ -12,3 +12,4 @@
 12. select * from movie where type like 'action' or type like 'comedy'
 13.  select * from movie where price>150 and price<=200
 14. select title, price*15 from movie where price>150
+15. select title, price*15 " new price" from movie where price>150 
