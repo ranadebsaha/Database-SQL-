@@ -13,3 +13,4 @@
 13.  select * from movie where price>150 and price<=200
 14. select title, price*15 from movie where price>150
 15. select title, price*15 " new price" from movie where price>150 
+16. select * from movie order by title asc
