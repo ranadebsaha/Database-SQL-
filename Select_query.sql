@@ -14,3 +14,4 @@
 14. select title, price*15 from movie where price>150
 15. select title, price*15 " new price" from movie where price>150 
 16. select * from movie order by title asc
+17. select title, type from movie where type != 'horror'
