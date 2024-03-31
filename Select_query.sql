@@ -15,3 +15,4 @@
 15. select title, price*15 " new price" from movie where price>150 
 16. select * from movie order by title asc
 17. select title, type from movie where type != 'horror'
+18. select title , sqrt( price) from movie
