@@ -18,3 +18,4 @@
 18. select title , sqrt( price) from movie
 19. select title, (price - 100)/price from movie where title= 'home alone'
 20. select fname, lname, area,cust_id from cust
+21.  select fname  from cust
