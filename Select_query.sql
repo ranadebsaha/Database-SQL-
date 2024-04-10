@@ -21,3 +21,4 @@
 21.  select fname  from cust
 22.  select mv_no, title , type  from movie where star like 'm%'
 23. select mv_no,inv_no from invoice where inv_no<'i05'
+24.  select  count(fname) from cust
