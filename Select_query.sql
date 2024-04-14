@@ -24,3 +24,4 @@
 24. select  count(fname) from cust
 25. select sum(price) from movie 
 26. select avg(price) from movie
+27. select max(price) "max_price" , min (price)  "min_price" from movie
