@@ -25,3 +25,4 @@
 25. select sum(price) from movie 
 26. select avg(price) from movie
 27. select max(price) "max_price" , min (price)  "min_price" from movie
+28.  select  count(title) from movie where price >=150
