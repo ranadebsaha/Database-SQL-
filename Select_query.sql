@@ -26,4 +26,5 @@
 26. select avg(price) from movie
 27. select max(price) "max_price" , min (price)  "min_price" from movie
 28. select  count(title) from movie where price >=150
-29. select 'The Invoice No of customer ID ' || invoice.cust_id || ' is ' || inv_no || ' and Movie No. is ' || invoice.mv_no from cust, movie, invoice where cust.cust_id=invoice.cust_id and movie.mv_no= invoice.mv_no 
+29.A. select 'The Invoice No of customer ID ' || invoice.cust_id || ' is ' || inv_no || ' and Movie No. is ' || invoice.mv_no from cust, movie, invoice where cust.cust_id=invoice.cust_id and movie.mv_no= invoice.mv_no 
+29.B. select invoice.cust_id|| ' has taken Movie No. '|| invoice.mv_no ||' on ' || issue_date || ' and will return on '|| return_date from cust, movie, invoice where cust.cust_id=invoice.cust_id and movie.mv_no= invoice.mv_no
