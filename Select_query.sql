@@ -30,3 +30,4 @@
 29.B. select invoice.cust_id|| ' has taken Movie No. '|| invoice.mv_no ||' on ' || issue_date || ' and will return on '|| return_date from cust, movie, invoice where cust.cust_id=invoice.cust_id and movie.mv_no= invoice.mv_no
 30. SELECT avg(price), type FROM movie GROUP BY type
 31. SELECT COUNT(mv_no), type FROM movie GROUP BY type
+32. SELECT count(mv_no), type FROM movie where type='thriller' or type='comedy' GROUP BY type
