@@ -31,3 +31,4 @@
 30. SELECT avg(price), type FROM movie GROUP BY type
 31. SELECT COUNT(mv_no), type FROM movie GROUP BY type
 32. SELECT count(mv_no), type FROM movie where type='thriller' or type='comedy' GROUP BY type
+33. select avg(price),type from movie where price<=150 group by type 
