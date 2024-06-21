@@ -35,3 +35,4 @@
 34. SELECT avg(price), type FROM movie where price>=150 and (type='thriller' or type='comedy') GROUP BY type select * from cust
 35. select mv_no from invoice inner join cust on invoice.cust_id=cust.cust_id and fname='Ivan'
 36. select fname, lname, mv_no from invoice inner join cust on invoice.cust_id= cust.cust_id
+37. select movie.title, invoice.cust_id, invoice.mv_no from invoice inner join movie on invoice.mv_no=movie.mv_no
