@@ -37,6 +37,4 @@
 36. select fname, lname, mv_no from invoice inner join cust on invoice.cust_id= cust.cust_id
 37. select movie.title, invoice.cust_id, invoice.mv_no from invoice inner join movie on invoice.mv_no=movie.mv_no
 38. select title , type from invoice inner join movie on invoice.mv_no=movie.mv_no inner join cust on invoice.cust_id=cust.cust_id and fname='Vandana'
-39. select fname, lname from invoice
-inner join movie
-on invoice.mv_no=movie.mv_no inner join cust on invoice.cust_id=cust.cust_id and type='drama'
+39. select fname, lname from invoice inner join movie on invoice.mv_no=movie.mv_no inner join cust on invoice.cust_id=cust.cust_id and type='drama'
