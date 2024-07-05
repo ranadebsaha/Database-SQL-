@@ -39,3 +39,4 @@
 38. select title , type from invoice inner join movie on invoice.mv_no=movie.mv_no inner join cust on invoice.cust_id=cust.cust_id and fname='Vandana'
 39. select fname, lname from invoice inner join movie on invoice.mv_no=movie.mv_no inner join cust on invoice.cust_id=cust.cust_id and type='drama'
 40.  select 'The Movie taken by ' || cust.fname ||' '|| cust.lname ||' is ' || movie.title from invoice inner join cust on invoice.cust_id=cust.cust_id inner join movie on invoice.mv_no= movie.mv_no and movie.mv_no>=3
+41.  select fname ,lname from cust where cust_id in (select cust_id from invoice where mv_no in (select mv_no from movie where mv_no = '9'))
