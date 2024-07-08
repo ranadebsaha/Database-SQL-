@@ -41,3 +41,4 @@
 40.  select 'The Movie taken by ' || cust.fname ||' '|| cust.lname ||' is ' || movie.title from invoice inner join cust on invoice.cust_id=cust.cust_id inner join movie on invoice.mv_no= movie.mv_no and movie.mv_no>=3
 41.  select fname ,lname from cust where cust_id in (select cust_id from invoice where mv_no in (select mv_no from movie where mv_no = '9'))
 42. select fname , lname ,area from cust where cust_id= (select cust_id from invoice where inv_no='i10')
+43. select fname ,lname, phone_no from cust where cust_id in (select cust_id from invoice where issue_date <'01-AUG-93')
