@@ -42,3 +42,4 @@
 41.  select fname ,lname from cust where cust_id in (select cust_id from invoice where mv_no in (select mv_no from movie where mv_no = '9'))
 42. select fname , lname ,area from cust where cust_id= (select cust_id from invoice where inv_no='i10')
 43. select fname ,lname, phone_no from cust where cust_id in (select cust_id from invoice where issue_date <'01-AUG-93')
+44. select title from movie where mv_no in (select mv_no from invoice where cust_id in ( select cust_id from cust where fname= 'Vandana' or fname ='Ivan'))
