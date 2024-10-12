@@ -46,4 +46,4 @@
 45.  select mv_no , title from movie where mv_no in(select mv_no from invoice where cust_id in (select cust_id from cust))
 46. select type, mv_no from movie where mv_no in(select mv_no from invoice where cust_id in (select cust_id from cust where cust_id='a01' or cust_id = 'a02'))
 47. select cust_id from cust where cust_id =(select cust_id from invoice where mv_no= (select mv_no from movie where star='tom cruise'))
-48. select lname , fname from cust where cust_id in ( select cust_id from invoice where mv_no in (select mv_no from movie))
+
