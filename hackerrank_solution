@@ -5,3 +5,4 @@ select round(long_w,4) from station where lat_n >38.7780 order by lat_n asc limi
 select round(abs(min(lat_n)-max(lat_n)) + abs(min(long_w)-max(long_w)),4) from station;
 select round(sqrt(power(min(lat_n)-max(lat_n),2) + power(min(long_w)-max(long_w),2)),4) from station;
 select round(median(lat_n),4) from station;
+select case when a+b > c then case when a=b and b=c then 'Equilateral' when a=b or b=c or a=c then 'Isosceles' when a!=b and a!=c and b != c then 'Scalene' end else 'Not A Triangle' end from triangles; 
