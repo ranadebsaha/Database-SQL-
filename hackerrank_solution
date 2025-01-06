@@ -4,3 +4,4 @@ select round(lat_n,4) from station where lat_n >38.7780 order by lat_n asc limit
 select round(long_w,4) from station where lat_n >38.7780 order by lat_n asc limit 1;
 select round(abs(min(lat_n)-max(lat_n)) + abs(min(long_w)-max(long_w)),4) from station;
 select round(sqrt(power(min(lat_n)-max(lat_n),2) + power(min(long_w)-max(long_w),2)),4) from station;
+select round(median(lat_n),4) from station;
