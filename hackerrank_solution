@@ -2,3 +2,4 @@ select round(lat_n,4) from station where lat_n < 137.2345 order by lat_n desc li
 select round(long_w,4) from station where lat_n < 137.2345 order by lat_n desc limit 1;
 select round(lat_n,4) from station where lat_n >38.7780 order by lat_n asc limit 1;
 select round(long_w,4) from station where lat_n >38.7780 order by lat_n asc limit 1;
+select round(abs(min(lat_n)-max(lat_n)) + abs(min(long_w)-max(long_w)),4) from station;
