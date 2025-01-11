@@ -77,3 +77,16 @@ insert into invoice values (
 
 insert into invoice values (
 'i10', '8' , 'a06', '03-sep-93', '06-sep-93')
+
+-- Student_Details table data: 
+
+insert into student_details values('s0001','Kartick','khajurdihi','cse','06-oct-22')
+insert into student_details values('s0002','Dipankar','katwa','mca','26-jan-20')
+insert into student_details values('s0003','RDS','Bandel','it','13-sep-23')
+insert into student_details values('s0004','Ranadeb','katwa','it','20-sep-21')
+insert into student_details values('s0005','Pronay','sodepur','cse','10-jul-21')
+insert into student_details values('s0006','Subhra','dainhat','bca','11-feb-22')
+insert into student_details values('s0007','Ankan','dainhat','mca','23-may-24')
+insert into student_details values('s0008','Argha','kolkata','ee','13-nov-19')
+insert into student_details values('s0009','Sarnojit','kolkata','cse','09-oct-23')
+insert into student_details values('s0010','Pronob','dumdum','ece','15-jan-18')
