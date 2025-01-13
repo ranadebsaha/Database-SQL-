@@ -90,3 +90,17 @@ insert into student_details values('s0007','Ankan','dainhat','mca','23-may-24')
 insert into student_details values('s0008','Argha','kolkata','ee','13-nov-19')
 insert into student_details values('s0009','Sarnojit','kolkata','cse','09-oct-23')
 insert into student_details values('s0010','Pronob','dumdum','ece','15-jan-18')
+
+
+-- Student_Marks table data: 
+
+insert into student_marks values('s0001',60,92,37)
+insert into student_marks values('s0002',91,42,19)
+insert into student_marks values('s0003',40,59,75)
+insert into student_marks values('s0004',53,64,28)
+insert into student_marks values('s0005',91,78,94)
+insert into student_marks values('s0006',80,93,90)
+insert into student_marks values('s0007',34,91,99)
+insert into student_marks values('s0008',40,45,10)
+insert into student_marks values('s0009',83,89,21)
+insert into student_marks values('s0010',46,36,95)
