@@ -6,3 +6,4 @@ select round(abs(min(lat_n)-max(lat_n)) + abs(min(long_w)-max(long_w)),4) from s
 select round(sqrt(power(min(lat_n)-max(lat_n),2) + power(min(long_w)-max(long_w),2)),4) from station;
 select round(median(lat_n),4) from station;
 select case when a+b > c then case when a=b and b=c then 'Equilateral' when a=b or b=c or a=c then 'Isosceles' when a!=b and a!=c and b != c then 'Scalene' end else 'Not A Triangle' end from triangles; 
+select name from students s join friends f on s.id=f.id join packages p on f.id=p.id join packages p1 on f.friend_id=p1.id where p.salary<p1.salary order by p1.salary asc;
