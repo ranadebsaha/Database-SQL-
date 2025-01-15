@@ -47,3 +47,9 @@
 46. select type, mv_no from movie where mv_no in(select mv_no from invoice where cust_id in (select cust_id from cust where cust_id='a01' or cust_id = 'a02'))
 47. select cust_id from cust where cust_id =(select cust_id from invoice where mv_no= (select mv_no from movie where star='tom cruise'))
 48. select lname , fname from cust where cust_id in ( select cust_id from invoice where mv_no in (select mv_no from movie))
+
+-----Student Database Query------
+a. select name,branch from student_details
+b. select * from student_details where name like 'A%'
+c. select * from student_details where branch = 'it'
+d. select * from student_details where branch = 'mca' and address = 'salt lake'
