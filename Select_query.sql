@@ -49,7 +49,8 @@
 48. select lname , fname from cust where cust_id in ( select cust_id from invoice where mv_no in (select mv_no from movie))
 
 -----Student Database Query------
-a. select name,branch from student_details
-b. select * from student_details where name like 'A%'
-c. select * from student_details where branch = 'it'
-d. select * from student_details where branch = 'mca' and address = 'salt lake'
+a. select name,branch from student_details;
+b. select * from student_details where name like 'A%';
+c. select * from student_details where branch = 'it';
+d. select * from student_details where branch = 'mca' and address = 'salt lake';
+e. select sid,name from student_details where adm_date = to_date('28-08-2003','dd-mm-yyyy');
