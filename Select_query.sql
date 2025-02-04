@@ -54,3 +54,4 @@ b. select * from student_details where name like 'A%';
 c. select * from student_details where branch = 'it';
 d. select * from student_details where branch = 'mca' and address = 'salt lake';
 e. select sid,name from student_details where adm_date = to_date('28-08-2003','dd-mm-yyyy');
+f. select sid from student_details where adm_date like '__-___-02';
