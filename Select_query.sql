@@ -56,3 +56,4 @@ d. select * from student_details where branch = 'mca' and address = 'salt lake';
 e. select sid,name from student_details where adm_date = to_date('28-08-2003','dd-mm-yyyy');
 f. select sid from student_details where adm_date like '__-___-02';
 g. select m_sub1+m_sub2+m_sub3 total_marks from student_marks where sid='s0005';
+h. select sid from student_marks where m_sub2<45
