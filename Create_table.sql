@@ -12,3 +12,7 @@ create table student_details
   ( sid char(6) primary key, name varchar(25), address varchar(35), branch char(5), adm_date date, check(branch in ('cse', 'it', 'ee','ece','mca','bca')), check(adm_date>to_date('01-06-2002','DD-MM-YYYY')));
 create table student_marks
   ( sid char(6) references student_details(sid), m_sub1 number(3), m_sub2 number(3),m_sub3 number(3), check(m_sub1>=0 and m_sub1<=100),check(m_sub2>=0 and m_sub2<=100),check(m_sub3>=0 and m_sub3<=100))
+
+create table client_master_71(
+client_no varchar2(6) primary key check(client_no like 'C%'), name varchar2(20) not null, city varchar2(15), bal_due 
+number(10,2));
