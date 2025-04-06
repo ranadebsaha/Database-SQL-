@@ -16,3 +16,8 @@ create table student_marks
 create table client_master_71(
 client_no varchar2(6) primary key check(client_no like 'C%'), name varchar2(20) not null, city varchar2(15), bal_due 
 number(10,2));
+
+create table product_master_71(
+product_no varchar2(6) primary key check(product_no like 'P%'), description varchar2(30) not null, profit_percent 
+number(8,2) not null, unit_measure varchar2(15) not null, qty_on_hand number(10) not null,reorder_lvl number(10) 
+not null,sell_price number(10,2) not null check(sell_price >0), cost_price number(10,2) not null check(cost_price >0));
