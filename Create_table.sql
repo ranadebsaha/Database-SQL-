@@ -21,3 +21,8 @@ create table product_master_71(
 product_no varchar2(6) primary key check(product_no like 'P%'), description varchar2(30) not null, profit_percent 
 number(8,2) not null, unit_measure varchar2(15) not null, qty_on_hand number(10) not null,reorder_lvl number(10) 
 not null,sell_price number(10,2) not null check(sell_price >0), cost_price number(10,2) not null check(cost_price >0));
+
+create table salesman_master_71(
+salesman_no varchar2(8) primary key check(salesman_no like 'S%'), salesman_name varchar2(25) not null,city 
+varchar2(25), sal_amt number(10,2) not null check(sal_amt >0), tgt_to_get number(10,2) not null check(tgt_to_get 
+>0), ytd_sales number(10,2) not null);
