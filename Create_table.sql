@@ -26,3 +26,9 @@ create table salesman_master_71(
 salesman_no varchar2(8) primary key check(salesman_no like 'S%'), salesman_name varchar2(25) not null,city 
 varchar2(25), sal_amt number(10,2) not null check(sal_amt >0), tgt_to_get number(10,2) not null check(tgt_to_get 
 >0), ytd_sales number(10,2) not null);
+
+create table sales_order_71(
+order_no varchar2(8) primary key check(order_no like 'O%'), order_date date, client_no varchar2(8) references 
+client_master_71(client_no),salesman_no varchar2(8) references salesman_master_71(salesman_no), dely_type 
+char(1) default 'F' check(dely_type in ('P', 'F')) , billed_yn char(1), dely_date date, order_status varchar2(15) 
+check(order_status in ('In Process' , 'Fulfilled' , 'BackOrder' , 'Cancelled')));
