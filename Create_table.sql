@@ -32,3 +32,7 @@ order_no varchar2(8) primary key check(order_no like 'O%'), order_date date, cli
 client_master_71(client_no),salesman_no varchar2(8) references salesman_master_71(salesman_no), dely_type 
 char(1) default 'F' check(dely_type in ('P', 'F')) , billed_yn char(1), dely_date date, order_status varchar2(15) 
 check(order_status in ('In Process' , 'Fulfilled' , 'BackOrder' , 'Cancelled')));
+
+create table sales_order_details_71(
+order_no varchar2(8) references sales_order_71(order_no), product_no varchar2(10) references 
+product_master_71(product_no),qty_ordered number(10), qty_disp number(8), product_rate number(10,2));
