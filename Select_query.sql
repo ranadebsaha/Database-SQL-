@@ -60,4 +60,4 @@ h. select sid from student_marks where m_sub2<45
 i. select sid from student_marks where m_sub1<45 and m_sub3<45
 j. select sid from student_marks where m_sub2<45 and (m_sub1>=45 and m_sub3>=45)
 k. select sid,((m_sub1+m_sub2+m_sub3)/3) as percentage from student_marks
-select * from
+
